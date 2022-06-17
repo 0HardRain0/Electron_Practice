@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="header">
+        <div class="logo">
+          Hello World!
+        </div>
+        <nav>
+          <div class="right-side-menubar">
+
+            <div id="dark-mode-button">
+              <button id="toggle-dark-mode">Dark Mode</button>
+              <button id="reset-to-system">Light Mode</button>
+            </div>
+
+            <a id="about" href="#">about</a>
+            <a id="test" href="#">test</a>
+
+            <div class="header-menu-button">
+            </div>
+          </div>
+            
+        </nav>
+
+    </div>
+    <nav class="side-bar">
+      <div>
+        <a class="logo-sidebar" href="http://startific.com">
+
+        </a>
+      </div>
+      <div class="settings">  </div>
+      <div class="scrollbar" id="style-1">
+        <ul>
+          <li>
+            <a href="http://startific.com">
+              <i class="fa fa-home fa-lg"></i>
+              <span class="nav-text">HOME</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://startific.com">
+              <i class="fa fa-user fa-lg"></i>
+              <span class="nav-text">Login</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://startific.com">
+              <i class="fa fa-envolope-o fa-lg"></i>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://startific.com">
+              <i class="fa fa-heart-o fa-lg"></i>
+
+              <span class="share">
+
+                <div class="addthis_default_style addthis_32x32_style">
+                  <div style="position:absolute;
+                  margin-left: 56px; top:3px">
+
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="share-popup"><img src="http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png" width="30px" height="30px"></a>
+
+                  <a href="https://twitter.com/share" target="_blank" class="share-popup"><img src="https://cdn1.iconfinder.com/data/icons/metro-ui-dock-icon-set--icons-by-dakirby/512/Twitter_alt.png" width="30px" height="30px"></a>
+
+                  <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=_URL_&title=_TITLE_
+                  " target="_blank" class="share-popup"><img src="http://icons.iconarchive.com/icons/danleech/simple/512/google-plus-icon.png" width="30px" height="30px"></a> 
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <div class="main">
+      
+      <div class="main-background">
+
+      </div>
+
+      <div class="main-contents">
+        <div class="main-contents-first">
+          <div id="main-contents-image1">
+          
+          </div>
+          <p>We are using Node.js <span id="node-version"></span>,
+            Chromium <span id="chrome-version"></span>,
+            and Electron <span id="electron-version"></span>.
+            <br>practice electron
+          </p>
+
+        </div>
+
+        <div class="main-contents-second">
+          <p>
+            My first time electron <br> Tiral making this app, please help me~
+          </p>
+
+          <div id="main-contents-image2">
+          </div>
+
+        </div>
+
+        <div class="main-contents-third">
+          
+          <div id="main-contents-image3">
+          </div>
+
+          <p>
+            Main Contents Third Section And test by electron<br>
+          </p>
+
+        </div>
+        
+      </div>
+      
+
+
+    </div>
+   </div>
+   
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
